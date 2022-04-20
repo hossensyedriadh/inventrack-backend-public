@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvenTrack</title>
+    <style type="text/css">
+        #subject {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        #main {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #warning_1 {
+            color: #E34C00;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<h4 id="subject">Email address changed</h4>
+<div id="main">
+    <p><strong>Your account's (<span th:text="${username}"></span>) email address was
+        changed on: <span th:text="${datetime}"></span></strong></p>
+    <br>
+    <p><strong>New email address: </strong><span th:text="${updatedEmail}"></span></p>
+    <br>
+    <p>If you did not perform this action, contact with administrator now</p>
+    <br>
+    <hr>
+    <p id="warning_1">Do not reply to this email</p>
+    <br>
+    <hr>
+    <p th:text="'&copy; ' + ${#dates.year(#dates.createNow())} + ', InvenTrack'"></p>
+</div>
+</body>
+</html>

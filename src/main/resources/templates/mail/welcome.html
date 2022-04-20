@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>InvenTrack</title>
+    <style type="text/css">
+        #subject {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        #main {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #warning_1 {
+            color: #E34C00;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<h4 id="subject">Welcome to InvenTrack</h4>
+<div id="main">
+    <p>
+        You have successfully signed up to InvenTrack. Use your username / email and password to login.
+    </p>
+    <br>
+    <p>Username: <span th:text="${username}"></span></p>
+    <br>
+    <hr>
+    <br>
+    <p id="warning_1">Do not reply to this email</p>
+    <br>
+    <hr>
+    <p th:text="'&copy; ' + ${#dates.year(#dates.createNow())} + ', InvenTrack'"></p>
+</div>
+</body>
+</html>

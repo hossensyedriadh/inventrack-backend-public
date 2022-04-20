@@ -1,0 +1,1 @@
+insert into CUSTOMERS (name, phone_no, email, address) values ('Rod Johnson', '+123456789', 'spring@vmware.com', 'VMWare');

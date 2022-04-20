@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT -jar target/InvenTrack-RESTful-Service-1.0.0-SNAPSHOT.jar

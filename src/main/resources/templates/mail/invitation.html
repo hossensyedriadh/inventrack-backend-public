@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>InvenTrack</title>
+    <style type="text/css">
+        #subject {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        #main {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #signup_button {
+            text-align: center;
+            background-color: #087A00;
+            padding: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 7px;
+            transition: all .2s;
+            cursor: pointer;
+        }
+
+        #signup_button:hover {
+            background-color: #065C00;
+        }
+
+        #warning_1, #warning_2 {
+            color: #A00000;
+            font-size: 0.9rem;
+        }
+
+        #warning_3 {
+            color: #E34C00;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<h2 id="subject">Invitation</h2>
+<div id="main">
+    <h3>You have been invited to sign up for InvenTrack as <span th:text="${authority}"></span>
+    </h3>
+    <br>
+    <p><strong>Click the button below to proceed with the signup process</strong></p>
+    <a id="signup_button" th:href="@{${baseUrl}+'?token='+${token}}" target="_blank">Sign up</a>
+    <br>
+    <br>
+    <h3 id="warning_1">Expires on: <span th:text="${expiry}"></span> (Valid for 24 Hours)</h3>
+    <br>
+    <p id="warning_2">Do NOT share this email with anyone</p>
+    <p id="warning_3">Do not reply to this email</p>
+    <br>
+    <hr>
+    <p th:text="'&copy; ' + ${#dates.year(#dates.createNow())} + ', InvenTrack'"></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+{
+  "properties": [
+    {
+      "name": "application.security.jwt.keystore-location",
+      "type": "java.lang.String",
+      "description": "jks file location."
+    },
+    {
+      "name": "application.security.jwt.keystore-password",
+      "type": "java.lang.String",
+      "description": "keystore file password."
+    },
+    {
+      "name": "application.security.jwt.key-alias",
+      "type": "java.lang.String",
+      "description": "keystore alias name."
+    },
+    {
+      "name": "application.security.jwt.private-key-passphrase",
+      "type": "java.lang.String",
+      "description": "keystore private key password."
+    },
+    {
+      "name": "application.security.jwt.access-token.validity-mins",
+      "type": "java.lang.String",
+      "description": "Access token validity in minutes."
+    },
+    {
+      "name": "application.security.jwt.access-token.subject",
+      "type": "java.lang.String",
+      "description": "Subject of an Access Token."
+    },
+    {
+      "name": "application.security.jwt.refresh-token.subject",
+      "type": "java.lang.String",
+      "description": "Subject of a Refresh Token."
+    },
+    {
+      "name": "application.security.jwt.refresh-token.validity-days",
+      "type": "java.lang.String",
+      "description": "Refresh token validity in days."
+    },
+    {
+      "name": "application.security.jwt.token-type",
+      "type": "java.lang.String",
+      "description": "Type of issued JWTs."
+    },
+    {
+      "name": "application.security.jwt.audience",
+      "type": "java.lang.String",
+      "description": "Name of the audience the JWT is intended for."
+    },
+    {
+      "name": "application.accounts.signup-invitation.validity",
+      "type": "java.lang.String",
+      "description": "Signup invitation validity in days."
+    },
+    {
+      "name": "accounts.mail.from",
+      "type": "java.lang.String",
+      "description": "Mail address used to send mail from regarding accounts actions."
+    },
+    {
+      "name": "client-application.url.signup-form",
+      "type": "java.lang.String",
+      "description": "Client Web Application URL for signup using invitation token."
+    },
+    {
+      "name": "oracle.cloud.credentials.config-file-path",
+      "type": "java.lang.String",
+      "description": "OCI Credentials Configuration file path."
+    },
+    {
+      "name": "oracle.cloud.credentials.namespace",
+      "type": "java.lang.String",
+      "description": "OCI Account namespace."
+    },
+    {
+      "name": "oracle.cloud.object-storage.bucket-name",
+      "type": "java.lang.String",
+      "description": "OCI Object Storage Bucket name."
+    },
+    {
+      "name": "oracle.cloud.object-storage.avatars-folder-name",
+      "type": "java.lang.String",
+      "description": "OCI Object Storage Bucket folder name for avatars."
+    },
+    {
+      "name": "oracle.cloud.object-storage.products-folder-name",
+      "type": "java.lang.String",
+      "description": "OCI Object Storage Bucket folder name for products."
+    }
+  ]
+}
