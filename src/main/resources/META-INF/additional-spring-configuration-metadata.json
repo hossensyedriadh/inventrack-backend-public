@@ -1,0 +1,54 @@
+{
+  "properties": [
+    {
+      "name": "bearer-authentication.keystore.location",
+      "type": "java.lang.String",
+      "description": "Location of Keystore file."
+    },
+    {
+      "name": "bearer-authentication.keystore.key-alias",
+      "type": "java.lang.String",
+      "description": "Alias for Bearer Authentication Key."
+    },
+    {
+      "name": "bearer-authentication.keystore.passphrase",
+      "type": "java.lang.String",
+      "description": "Password for the Keystore file."
+    },
+    {
+      "name": "bearer-authentication.keystore.private-key-passphrase",
+      "type": "java.lang.String",
+      "description": "Password for the private key file of the keystore."
+    },
+    {
+      "name": "bearer-authentication.token.access-token.type",
+      "type": "java.lang.String",
+      "description": "Bearer Authentication access token type."
+    },
+    {
+      "name": "bearer-authentication.token.access-token.validity-mins",
+      "type": "java.lang.Integer",
+      "description": "Bearer authentication access token validity in minutes."
+    },
+    {
+      "name": "bearer-authentication.token.refresh-token.validity-hours",
+      "type": "java.lang.Integer",
+      "description": "Bearer authentication refresh token validity in hours."
+    },
+    {
+      "name": "bearer-authentication.token.audience",
+      "type": "java.lang.String",
+      "description": "URL of the audience of the Bearer tokens."
+    },
+    {
+      "name": "accounts.mail.from",
+      "type": "java.lang.String",
+      "description": "Address to be used to send mail from regarding accounts."
+    },
+    {
+      "name": "accounts.signup-invitation.validity",
+      "type": "java.lang.Integer",
+      "description": "Number of hours a signup invitation will stay valid for."
+    }
+  ]
+}
